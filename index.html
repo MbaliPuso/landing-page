@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@500;700&amp;display=swap" rel="stylesheet">
+    <title>Mbali Puso - Tiny Homes, Big Impact</title>
+</head>
+<body>
+ <div class="container">
+   <h1>Think
+    <span class="h1big">big,</span>
+    <span class="h1live">live</span>
+    <span class="h1small">small!</span>
+   </h1>
+   <h2 class="explore">Explore the wonders of tiny home living!</h2> 
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/375/original/TinyHouseThumbnail3.jpg?1687927695" alt="">
+   <p>In recent years, there has been a rising trend towards downsizing and simplifying our lives. One manifestation of this movement is the increasing popularity of tiny homes. These compact dwellings, typically measuring <em>less than 500 square feet,</em>
+    offer an array of benefits beyond their small size. Not only are they environmentally friendly and promote a minimalistic lifestyle, but they also present an opportunity for cost-effective living.
+   </p>
+   <h2 class="benefitheader">You can <br>benefit from</h2>
+   <ul>
+    <li class="transsec">
+        ::before
+        <h3 class="liheader">Reduced Costs:</h3>
+        <p class="benefit-p">Tiny homes are affordable due to their smaller size, resulting in lower material and maintenance expenses. They also offer significant savings on utility bills by consuming less energy for heating, cooling, and lighting.</p>
+    </li>
+    <li class="secondary">
+        ::before
+        <h3 class="liheader">Mobility and Flexibility:</h3>
+        <p class="benefit-p">Living in a tiny home encourages a minimalist mindset, as the limited space necessitates decluttering and prioritizing essentials. Embracing this simplicity allows residents to lead intentional and meaningful lives, free from the burden of excessive possessions</p>
+    </li>
+    <li class="trans">
+        ::before
+        <h3 class="liheader">Minimalist Lifestyle:</h3>
+        <p class="benefit-p">Tiny homes on wheels provide the freedom to relocate as desired. The ability to take your home with you offers unparalleled flexibility and the opportunity to explore different regions or stay closer to loved ones.</p>
+    </li>
+    <li class="primary">
+        ::before 
+        <h3 class="liheader">Financial Freedom:</h3>
+        <p class="benefit-p">The reduced costs associated with tiny homes offer financial freedom, allowing residents to allocate resources towards savings, investments, or experiences that enrich their lives. The lower financial burden can also enable individuals to pursue passions, start businesses, or travel more frequently, opening up new opportunities and possibilities.</p>
+    </li>
+   </ul>
+   <p>Tiny homes are not merely small dwellings; they represent a lifestyle choice that encompasses financial savings, environmental consciousness, and intentional living. By embracing the simplicity and efficiency of tiny homes, individuals can experience a more affordable, sustainable, and meaningful way of life. Whether you are seeking a cozy retreat, a flexible living arrangement, or a step towards a more minimalist lifestyle, tiny homes offer a world of possibilities. So, why not consider downsizing and embark on an adventure that combines cost-effectiveness with a big impact?</p>
+   <h2 class="benefitheader">See for yourself!</h2>
+   <p>Not sold quite yet? Check out Levi Kelly's tiny home tours to see the charm of these homes. Better yet, you can book a stay in a tiny home close to you!</p>
+   <ul class="curatedcontent">
+    <li>
+        ::before
+        <a href="https://youtube.com/playlist?list=PLjF_ap0kxkQLOMzxKHStXXb62gR6ATKBy">
+            <img src="	https://s3.amazonaws.com/shecodesio-production/upl…87/373/original/TinyHouseThumbnail.png?1687927400" alt="">
+        </a>
+        <p class="thumbnailtext">TINY HOME TOURS</p>
+    </li>
+    <li>
+        <a href="https://levimkelly.com/stay-here-1">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/374/original/TinyHouseThumbnail2.jpg.png?1687927610" alt="Thumbnail to Youtube" class="thumbnail">
+        </a>
+        <p class="thumbnailtext">BOOK A STAY</p>
+    </li>
+   </ul>
+  </div>
+  <div class="container2">
+    <p id="footerfont">For more information about tiny homes</p>
+    <button>Subscribe here!</button>
+    <footer>
+        This page was designed & coded by
+        <strong><a href="https://www.linkedin.com/in/mbali-puso-8159b825b">Mbali Puso</a></strong>
+        <br>
+        to practice basic HTML, CSS & JavaScript
+        <br>
+        June 2023
+    </footer>
+  </div>
+  <script>
+    function subbed() {
+        let name = prompt("What's your name");
+        let email = prompt("What's your email?");
+
+        name = name.trim();
+        email = email.trim();
+
+        let footerFont = document.querySelector("#footerFont");
+        if (name && email) {
+            footerFont.innerHTML = "Thank you for subscribing," + name;
+        } else {
+            alert("Please provide your information!");
+        }
+    }
+
+    let subBtn = document.querySelector("button");
+    subBtn.addEventListener("click", subbed);
+  </script>
+</body>
+</html>
